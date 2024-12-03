@@ -85,7 +85,7 @@ AniVerse/
 │   │               └── presentation/      # Presentation layer
 │   │                   ├── di/            # Dependency injection for presentation
 │   │                   ├── intent/        # User intents
-│   │                   ├── stateHandler/  # State handlers for MVI
+│   │                   ├── stateHandler/  # Custom state handler
 │   │                   ├── uiState/       # UI State models
 │   │                   └── viewModel/     # ViewModels for state management
 │   └── ...
