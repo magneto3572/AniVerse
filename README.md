@@ -1,6 +1,6 @@
 # AniVerse
 
-AniVerse is a **Kotlin Multiplatform Mobile (KMP)** application designed for both Android and iOS platforms. It utilizes modern development practices with **Clean Architecture** and **Model-View-Intent (MVI)**. AniVerse supports platform-specific native UI components while sharing the business logic.
+AniVerse is a **Compose Multiplatform Mobile (CMP)** application designed for both Android and iOS platforms. It utilizes modern development practices with **Clean Architecture** and **Model-View-Intent (MVI)**. AniVerse supports platform-specific native UI components while sharing the business logic.
 
 
 ## 📸 Screenshots
@@ -15,9 +15,7 @@ AniVerse is a **Kotlin Multiplatform Mobile (KMP)** application designed for bot
 ## 🌟 Features
 
 - **Cross-Platform Compatibility**: Unified shared business logic for Android and iOS.
-- **Native UI**:
-  - **Android**: Built using **Jetpack Compose** for a modern and declarative UI.
-  - **iOS**: Uses **SwiftUI**, Apple’s native declarative UI framework.
+- **Shared UI** : Built using jetpack compose
 - **Architecture**: Implements **MVI** for predictable and reactive state management.
 - **Networking**: Powered by **Ktor** for efficient and flexible API communication.
 - **Dependency Injection**: Modular and testable code with **Koin**.
@@ -34,16 +32,8 @@ The **shared module** contains all reusable code:
 - **Domain Layer**: Includes use cases, repository abstractions, and business logic.
 - **Presentation Layer**: Includes intent, viewmodels, and UiState.
 
-### Native UI for Each Platform
-- **Android**: Uses **Jetpack Compose** for rich and responsive UI.
-- **iOS**: Leverages **SwiftUI** to follow Apple's design guidelines.
-- Native UIs interact with the shared logic via platform-specific adapters.
-
-<div align="center">
-  <img src="/sampleImages/kmp.png" width="350px" height="180px" />
-</div>
-
----
+## Shared UI
+- Android & iOS: Both platforms use Jetpack Compose to implement the UI, ensuring a consistent look and feel across devices while adhering to platform-specific guidelines.	
 
 ## 🛠️ Prerequisites
 
