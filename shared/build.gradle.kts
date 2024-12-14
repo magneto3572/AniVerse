@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.composeMultiplatform)
+    alias(libs.plugins.compose.compiler)
     kotlin("plugin.serialization")
 }
 
@@ -45,6 +47,18 @@ kotlin {
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.client.encoding)
 
+
+            implementation(compose.runtime)
+            implementation(compose.foundation)
+            implementation(compose.material)
+            implementation(compose.ui)
+            implementation(compose.components.resources)
+            implementation(compose.components.uiToolingPreview)
+            implementation(libs.androidx.lifecycle.viewmodel)
+            implementation(libs.androidx.lifecycle.runtime.compose)
+            implementation(libs.coil.mp)
+            implementation(libs.coil3.coil.compose)
+            implementation(libs.coil.network.ktor)
             //Koin
             implementation(libs.koin.core)
 
@@ -53,7 +67,7 @@ kotlin {
 
             //Navigation
             implementation(libs.navigation.compose)
-
+            implementation(libs.coil.network.ktor3)
         }
 
         androidMain.dependencies{

@@ -1,22 +1,19 @@
 package com.generativeai.aniverse.presentation.viewmodel
 
-import androidx.lifecycle.viewModelScope
-import com.generativeai.aniverse.presentation.stateHandler.PlatformStateHandler
-import com.generativeai.aniverse.domain.usecases.GetPopularAnimeUseCase
 import com.generativeai.aniverse.domain.usecases.GetAnimeHomeUseCase
 import com.generativeai.aniverse.domain.usecases.GetAnimeMovieUseCase
+import com.generativeai.aniverse.domain.usecases.GetPopularAnimeUseCase
 import com.generativeai.aniverse.presentation.intent.AnimeScreenIntent
+import com.generativeai.aniverse.presentation.stateHandler.PlatformStateHandler
 import com.generativeai.aniverse.presentation.uistate.AnimeUiState
 import com.generativeai.aniverse.presentation.viewmodel.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
-import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.launch
 
 class AnimeViewModel(
     private val getAnimeMovieUseCase: GetAnimeMovieUseCase,

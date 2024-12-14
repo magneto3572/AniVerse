@@ -5,7 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.generativeai.aniverse.android.ui.home.HomeScreen
+import com.generativeai.aniverse.presentation.ui.home.HomeScreen
 import com.generativeai.aniverse.presentation.viewmodel.AnimeViewModel
 import kotlinx.serialization.Serializable
 import org.koin.androidx.compose.koinViewModel

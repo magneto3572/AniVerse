@@ -1,22 +1,30 @@
 [versions]
-agp = "8.8.0-alpha09"
+agp = "8.9.0-alpha05"
 
-coilCompose = "2.5.0"
+coil = "2.6.0"
+coilCompose = "3.0.4"
+coilComposeVersion = "3.0.4"
 kotlin = "2.0.0"
 compose = "1.5.4"
 compose-material3 = "1.1.2"
-androidx-activityCompose = "1.8.0"
 kotlinxSerializationJson = "1.7.3"
 ktor-client = "3.0.0"
 coroutines = "1.9.0"
 koin = "4.0.0"
+androidx-activityCompose = "1.9.3"
+androidx-lifecycle = "2.8.3"
 koin-androidx-compose = "4.0.0"
 lifecycleViewmodelCompose = "2.8.2"
 navigationCompose = "2.8.0-alpha10"
 navigationComposeVersion = "2.8.3"
+compose-multiplatform = "1.7.0"
 
 [libraries]
-coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+
+coil-mp = { module = "io.coil-kt.coil3:coil", version.ref = "coilComposeVersion" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor2", version.ref = "coilComposeVersion" }
+coil-network-ktor3 = { module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "coilComposeVersion" }
+coil3-coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilComposeVersion" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
@@ -41,6 +49,8 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor-client" }
 navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationComposeVersion" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -48,4 +58,5 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

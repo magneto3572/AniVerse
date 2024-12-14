@@ -5,18 +5,18 @@
     "sourceSetName": "nativeMain"
   },
   {
-    "moduleId": "io.ktor:ktor-utils:3.0.0",
-    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/io.ktor-ktor-utils-3.0.0-iosMain-cinterop/io.ktor_ktor-utils-cinterop-threadUtils-Y_B_kg.klib",
-    "sourceSetName": "iosMain"
-  },
-  {
-    "moduleId": "org.jetbrains.compose.ui:ui-uikit:1.7.0-beta02",
-    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/org.jetbrains.compose.ui-ui-uikit-1.7.0-beta02-uikitMain-cinterop/org.jetbrains.compose.ui_ui-uikit-cinterop-utils-aNVDjg.klib",
+    "moduleId": "org.jetbrains.compose.ui:ui-uikit:1.7.0",
+    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/org.jetbrains.compose.ui-ui-uikit-1.7.0-uikitMain-cinterop/org.jetbrains.compose.ui_ui-uikit-cinterop-utils-aNVDjg.klib",
     "sourceSetName": "uikitMain"
   },
   {
-    "moduleId": "io.ktor:ktor-io:3.0.0",
-    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/io.ktor-ktor-io-3.0.0-iosMain-cinterop/io.ktor_ktor-io-cinterop-mutex-qJy_EQ.klib",
+    "moduleId": "io.ktor:ktor-utils:3.0.1",
+    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/io.ktor-ktor-utils-3.0.1-iosMain-cinterop/io.ktor_ktor-utils-cinterop-threadUtils-kGNXpQ.klib",
+    "sourceSetName": "iosMain"
+  },
+  {
+    "moduleId": "io.ktor:ktor-io:3.0.1",
+    "file": "/Users/bishaleur0409/AndroidStudioProjects/AniVerse/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/io.ktor-ktor-io-3.0.1-iosMain-cinterop/io.ktor_ktor-io-cinterop-mutex-G8iuZg.klib",
     "sourceSetName": "iosMain"
   }
 ]

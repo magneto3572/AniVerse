@@ -48,5 +48,4 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.koin.androidx.compose)
-    implementation(libs.coil.compose)
 }
